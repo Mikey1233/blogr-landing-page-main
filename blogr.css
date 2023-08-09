@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -282,10 +283,8 @@ nav {
 }
 
 .para {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #333;
-    font-weight: lighter;
-    font-size: 85%;
+    font-size: 90%;
 }
 
 .editor-pic2 {

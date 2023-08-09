@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" >
-  <link rel="stylesheet" type="text/css" href="blogr.css">
-  <title>Frontend Mentor | [Blogr]</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="blogr.css">
+  <title>Frontend Mentor | [Blogr]</title>
 </head>
 <body>
   <div class="container">
@@ -191,122 +190,6 @@
         )
      
       })
-
-      //asynchronous javascript
-      function random(baf){
-         return   Math.floor(Math.random() * baf.length)
-      }
-      
-let stocks = {
-  fruits : ['apple','mango','banana','orange','plantain'],
-  liquid :['water','ice'],
-  holder:['cone','cup','stick'],
-  toppings:['chocolate','peanuts']
-}
-
-let is_shop_open = true;
-
-let order = (time,work)=>{
-
-  return new Promise( (resovle,reject)=>{
-        if(is_shop_open){
-          setTimeout(() => {
-            resovle( work())
-          }, time);
-
-        
-        }
-        
-        else{
-          setTimeout(() => {
-          reject( console.log('our shop is closed'))
-          }, time);
-
-        }
-  } )
-}
-order(2000,function(){
-  console.log(`${stocks.fruits[random(stocks.fruits)]} was selected`)
-})
-
-.then(function(){
-  order(1000,()=>console.log(`production has started`)) 
-})
-
-
-.then(()=>{
- return order(2000,()=>console.log(`the food was chopped`)) 
-})
-
-.then(()=>{
- return order(1000,()=>console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} were added`)) 
-})
-
-.then(()=>{
- return order(1000,()=>console.log(`start the machine`)) 
-})
-
-.then(()=>{
- return order(2000,()=>console.log(`the ice-cream  was placed on the ${stocks.holder[random(stocks.holder)]}`)) 
-})
-
-.then(()=>{
- return order(3000,()=>console.log(`${stocks.toppings[random(stocks.toppings)]} was added as toppings`)) 
-})
-
-.then(()=>{
- return order(2000,()=>console.log(`serve ice-cream`)) 
-})
-.catch(()=>{
-  console.log('we are closed')
-})
-.finally(()=>{
-  console.log('day ending we are closed')
-})
-    /*   const placeOrder = (fruitName,func)=>{
-       
-        setTimeout(()=>{
-        console.log(`'${stocks.fruits[fruitName]}' was selected `) 
-        func()
-         
-        },2000)
-
-
-       }
-       function Productionfunc(){
-        setTimeout(()=>{
-          console.log(`production has started`)
-          
-          setTimeout(()=>{
-            console.log('the fruit has been chopped')
-
-            setTimeout(()=>{
-              console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} were added`)
-
-              setTimeout(()=>{
-                console.log(`the machine has started`)
-
-                setTimeout(()=>{
-                  console.log(`the ice-cream  was placed on the ${stocks.holder[random(stocks.holder)]}`)
-
-                  setTimeout(()=>{
-                    console.log(`${stocks.toppings[random(stocks.toppings)]} was added as toppings`)
-                    
-                    setTimeout(()=>{
-                      console.log('serve ice-cream')
-                    },2000)
-
-                  },2000)
-                },2000)
-
-              },1000)
-            },2000)
-
-          },2000)
-
-        },1000)
-       }
-       placeOrder(random(stocks.fruits),Productionfunc)*/
 
     </script>
 
