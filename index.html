@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" >
+  <link rel="stylesheet" type="text/css" href="blogr.css">
+  <title>Frontend Mentor | [Blogr]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <section class="front">
+    
+      <header>
+        
+        <nav>
+          <img src="images/logo.svg" alt="logo" class="logo">
+          <ul class="lists">
+               <li>Product<img src="images/icon-arrow-light.svg" class="arrow" alt="arrow">
+                    <ul class="sub-list">
+                     <li>Overview</li> 
+                      <li>Pricing</li> 
+                     <li>Marketplace</li> 
+                      <li>Features</li>
+                     <li>Integrations</li> 
+                  </ul>
+             </li>
+
+
+                  <li>Company<img src="images/icon-arrow-light.svg" class="arrow" alt="arrow">
+                    <ul class="sub-list">
+                      <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+             </li>
+
+           <li>Connect<img src="images/icon-arrow-light.svg" class="arrow" alt="arrow">
+              <ul class="sub-list">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+           </li>
+          </ul>
+        </nav>
+
+           <div class="check">
+             <div id="log">Log in</div>
+             <button type="button" class="sign">sign up</button>
+           </div>
+         <div class="ham">
+          
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+           
+        </div>
+     </header>
+  
+
+  
+  
+      <aside class="down">
+           <h1>A modern publishing platform</h1>
+           <p>Grow your audience and build your online brand</p>
+          <button type="button" class="start">Start for Free</button> 
+           <button type="button" class="more">Learn More</button>
+      </aside>
+    
+  </section>  
+  </div>  
+    
+     
+     <!---- second page ---->
+
+  <section class="second-page">
+    <div class="title"><h2>Designed for the future</h2></div>
+
+    <div class="rol1">
+      <div class="title2">Introducing an extensible editor</div>
+    <p class="para"> Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+    change the looks of a blog.</p>
+      <div class="title2">Robust content management</div>
+    <p class="para">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+    </div>
+    
+    <div class="col-2">
+       <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop" class="editor-pic">
+       <img src="images/illustration-editor-mobile.svg" alt="illustration-editor-desktop" class="editor-pic2">
+
+    </div>
+  </section>
+
+  <section class="third-page">
+    <div class="phone-section"><img src="images/illustration-phones.svg" class="phone" alt="phone pic"></div>
+
+    <div class="content">
+     <h2>State of the Art Infrastructure</h2> 
+     <p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+      This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+    </div>
+  </section>
+  
+  
+  <section class="fourth-page">
+    <div class="zero">
+    <img src="images/illustration-laptop-desktop.svg" class="laptop" alt="illustration-laptop-desktop">
+    <img src="images/illustration-laptop-mobile.svg" class="laptop2" alt="illustration-laptop-desktop">
+
+    </div>
+    <div class="one">
+        <div class="title2">Free, open, simple</div>
+       <p class="ar para">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+    
+         <div class="title2">Powerful tooling</div>
+         <p class="ar para">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+         capable of producing even the most complicated sites.</p>
+     </div>
+     
+  </section>
+
+ <footer>
+        <div><img src="images/logo.svg" class="logo" alt="logo"></div>
+        <div>
+          <ul class="footer-list">
+            <li class="list-header">Product</li>
+            <li>Overview</li>
+            <li>Pricing </li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="footer-list">
+          <li class="list-header"> Company  </li>
+          <li> About  </li>
+          <li> Team  </li>
+          <li> Blog  </li>
+          <li> Careers  </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="footer-list">
+            <li class="list-header">Connect</li>
+            <li> LinkedIn </li>
+            <li>Contact</li>
+            <li>Newsletter</li>
+
+          </ul>
+        </div>
+ </footer>
+  <script>
+    const menuBar = document.querySelector('.ham')
+    const lists = document.querySelector('.lists')
+    const subList = document.querySelectorAll('.sub-list')
+    menuBar.addEventListener('click',()=>{
+      lists.classList.toggle('active')
+      menuBar.classList.toggle('active')
+    })
+    window.addEventListener('scroll',()=>{
+      if(lists.classList.contains('active') && menuBar.classList.contains('active')){
+        lists.classList.remove('active')
+      menuBar.classList.remove('active')
+      }
+
+    })
+   
+      subList.forEach((a,i)=>{
+        a.addEventListener(
+          'click',function(e){
+        if(e.target.matches('li')){
+        lists.classList.remove('active')
+        menuBar.classList.remove('active')
+        }
+          }
+        )
+     
+      })
+
+      //asynchronous javascript
+      function random(baf){
+         return   Math.floor(Math.random() * baf.length)
+      }
+      
+let stocks = {
+  fruits : ['apple','mango','banana','orange','plantain'],
+  liquid :['water','ice'],
+  holder:['cone','cup','stick'],
+  toppings:['chocolate','peanuts']
+}
+
+let is_shop_open = true;
+
+let order = (time,work)=>{
+
+  return new Promise( (resovle,reject)=>{
+        if(is_shop_open){
+          setTimeout(() => {
+            resovle( work())
+          }, time);
+
+        
+        }
+        
+        else{
+          setTimeout(() => {
+          reject( console.log('our shop is closed'))
+          }, time);
+
+        }
+  } )
+}
+order(2000,function(){
+  console.log(`${stocks.fruits[random(stocks.fruits)]} was selected`)
+})
+
+.then(function(){
+  order(1000,()=>console.log(`production has started`)) 
+})
+
+
+.then(()=>{
+ return order(2000,()=>console.log(`the food was chopped`)) 
+})
+
+.then(()=>{
+ return order(1000,()=>console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} were added`)) 
+})
+
+.then(()=>{
+ return order(1000,()=>console.log(`start the machine`)) 
+})
+
+.then(()=>{
+ return order(2000,()=>console.log(`the ice-cream  was placed on the ${stocks.holder[random(stocks.holder)]}`)) 
+})
+
+.then(()=>{
+ return order(3000,()=>console.log(`${stocks.toppings[random(stocks.toppings)]} was added as toppings`)) 
+})
+
+.then(()=>{
+ return order(2000,()=>console.log(`serve ice-cream`)) 
+})
+.catch(()=>{
+  console.log('we are closed')
+})
+.finally(()=>{
+  console.log('day ending we are closed')
+})
+    /*   const placeOrder = (fruitName,func)=>{
+       
+        setTimeout(()=>{
+        console.log(`'${stocks.fruits[fruitName]}' was selected `) 
+        func()
+         
+        },2000)
+
+
+       }
+       function Productionfunc(){
+        setTimeout(()=>{
+          console.log(`production has started`)
+          
+          setTimeout(()=>{
+            console.log('the fruit has been chopped')
+
+            setTimeout(()=>{
+              console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} were added`)
+
+              setTimeout(()=>{
+                console.log(`the machine has started`)
+
+                setTimeout(()=>{
+                  console.log(`the ice-cream  was placed on the ${stocks.holder[random(stocks.holder)]}`)
+
+                  setTimeout(()=>{
+                    console.log(`${stocks.toppings[random(stocks.toppings)]} was added as toppings`)
+                    
+                    setTimeout(()=>{
+                      console.log('serve ice-cream')
+                    },2000)
+
+                  },2000)
+                },2000)
+
+              },1000)
+            },2000)
+
+          },2000)
+
+        },1000)
+       }
+       placeOrder(random(stocks.fruits),Productionfunc)*/
+
+    </script>
+
+</body>
+</html>
